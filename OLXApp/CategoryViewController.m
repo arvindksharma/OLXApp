@@ -25,8 +25,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    categoriesDict = [(AppDelegate *)[[UIApplication sharedApplication] delegate] getCategories];
-    categoriesArray = [categoriesDict allKeys];
+    self.categoriesDict = [(AppDelegate *)[[UIApplication sharedApplication] delegate] getCategories];
+    self.categoriesArray = [[NSMutableArray alloc] initWithCapacity:0];
+    [self.categoriesArray addObjectsFromArray:[self.categoriesDict allKeys]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,24 +42,24 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return categoriesArray.count;
+    return self.categoriesArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CategoryNameCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryNameCell" forIndexPath:indexPath];
     
-    cell.categoryNameLabel.text = [categoriesArray objectAtIndex:indexPath.row];
+    cell.categoryNameLabel.text = [self.categoriesArray objectAtIndex:indexPath.row];
     
     return cell;
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    //[tableView deselectRowAtIndexPath:indexPath animated:NO];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     subCategoryController = (SubCategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"SubCategoryViewController"];
-    subCategoryController.subCategories = [categoriesArray objectAtIndex:indexPath.row];
+    subCategoryController.subCategories = [self.categoriesArray objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:subCategoryController animated:YES];
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "SubCategoryViewController.h"
+#import "SubCategoryNameCell.h"
 
 @interface SubCategoryViewController ()
 
@@ -36,13 +37,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.subCategories.count;
+    return 4;//self.subCategories.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    SubCategoryNameCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SubCategoryNameCell" forIndexPath:indexPath];
+    cell.subCategoryNameLabel.text = [self.subCategories objectAtIndex:indexPath.row];
     // Configure the cell...
     
     return cell;
