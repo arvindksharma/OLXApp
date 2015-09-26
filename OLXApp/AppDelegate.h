@@ -10,8 +10,9 @@
 #import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-    NSMutableDictionary *categoriesDict;
+
 }
+@property (strong, nonatomic) NSMutableDictionary *categoriesDict;
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -21,6 +22,7 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+-(NSMutableDictionary *) getCategories;
 
 
 @end

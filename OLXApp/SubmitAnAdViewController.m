@@ -10,16 +10,17 @@
 #import "TextCell.h"
 #import "PhotoCell.h"
 #import "SubmitCell.h"
+#import "CategoryCell.h"
 #import "PhotoCollectionViewCell.h"
 
 typedef enum entryField {
     Photos = 0,
     Title,
     Description,
+    ChooseCategory,
     Name,
     ContactNumber,
     Email,
-    ChooseCategory,
     Submit
 }EntryField;
 
@@ -44,7 +45,7 @@ typedef enum entryField {
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return 8;
 }
 
 
@@ -59,7 +60,7 @@ typedef enum entryField {
         return cell;
     }
     else if(indexPath.row == ChooseCategory) {
-        SubmitCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell" forIndexPath:indexPath];
+        CategoryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell" forIndexPath:indexPath];
         return cell;
     }
     else {
@@ -86,6 +87,9 @@ typedef enum entryField {
             break;
         case Description:
             height = 150.0;
+            break;
+        case ChooseCategory:
+            height = 50.0;
             break;
         case Name:
             height = 50.0;
@@ -114,11 +118,13 @@ typedef enum entryField {
             break;
         case 2: fieldTitle = @"Description (max. 5000)";
             break;
-        case 3: fieldTitle = @"Name";
+        case 3: fieldTitle = @"Choose Category";
             break;
-        case 4: fieldTitle = @"Contact Number";
+        case 4: fieldTitle = @"Name";
             break;
-        case 5: fieldTitle = @"Email";
+        case 5: fieldTitle = @"Contact Number";
+            break;
+        case 6: fieldTitle = @"Email";
             break;
     }
     return fieldTitle;
@@ -164,7 +170,9 @@ typedef enum entryField {
 }
 
 - (IBAction)submitAdAction:(id)sender {
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    categoryController = (CategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"CategoryViewController"];
+    [self.navigationController pushViewController:categoryController animated:YES];
 }
 
 

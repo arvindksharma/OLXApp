@@ -21,6 +21,8 @@
 		0AA3CF401BB6914900668D61 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF3F1BB6914900668D61 /* PhotoCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		0AA3CF431BB69E7A00668D61 /* SubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF421BB69E7A00668D61 /* SubmitCell.m */; settings = {ASSET_TAGS = (); }; };
 		0AA3CF461BB6A24900668D61 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF451BB6A24900668D61 /* CategoryCell.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF4C1BB6A99400668D61 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF4B1BB6A99400668D61 /* CategoryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF4F1BB6B05600668D61 /* CategoryNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF4E1BB6B05600668D61 /* CategoryNameCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		0AA3CF421BB69E7A00668D61 /* SubmitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCell.m; sourceTree = "<group>"; };
 		0AA3CF441BB6A24900668D61 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
 		0AA3CF451BB6A24900668D61 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		0AA3CF4A1BB6A99400668D61 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		0AA3CF4B1BB6A99400668D61 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		0AA3CF4D1BB6B05600668D61 /* CategoryNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryNameCell.h; sourceTree = "<group>"; };
+		0AA3CF4E1BB6B05600668D61 /* CategoryNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryNameCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,10 @@
 				0AA3CF421BB69E7A00668D61 /* SubmitCell.m */,
 				0AA3CF441BB6A24900668D61 /* CategoryCell.h */,
 				0AA3CF451BB6A24900668D61 /* CategoryCell.m */,
+				0AA3CF4A1BB6A99400668D61 /* CategoryViewController.h */,
+				0AA3CF4B1BB6A99400668D61 /* CategoryViewController.m */,
+				0AA3CF4D1BB6B05600668D61 /* CategoryNameCell.h */,
+				0AA3CF4E1BB6B05600668D61 /* CategoryNameCell.m */,
 			);
 			path = OLXApp;
 			sourceTree = "<group>";
@@ -197,6 +207,8 @@
 				0AA3CF3A1BB6811800668D61 /* TextCell.m in Sources */,
 				0AA3CF461BB6A24900668D61 /* CategoryCell.m in Sources */,
 				0AA3CF171BB66E3800668D61 /* AppDelegate.m in Sources */,
+				0AA3CF4C1BB6A99400668D61 /* CategoryViewController.m in Sources */,
+				0AA3CF4F1BB6B05600668D61 /* CategoryNameCell.m in Sources */,
 				0AA3CF371BB677AC00668D61 /* SubmitAnAdViewController.m in Sources */,
 				0AA3CF3D1BB68ADF00668D61 /* PhotoCell.m in Sources */,
 				0AA3CF141BB66E3800668D61 /* main.m in Sources */,

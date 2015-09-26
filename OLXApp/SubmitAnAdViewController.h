@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class CategoryViewController;
+
 @interface SubmitAnAdViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate> {
     NSMutableArray *photosArray;
     UIActionSheet *photoOptionActionSheet;
+    CategoryViewController *categoryController;
 }
 @property (weak, nonatomic) IBOutlet UITableView *AdEntryTableView;
 - (IBAction)addAPhotoAction:(id)sender;
