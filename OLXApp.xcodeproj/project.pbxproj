@@ -23,6 +23,8 @@
 		0AA3CF461BB6A24900668D61 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF451BB6A24900668D61 /* CategoryCell.m */; settings = {ASSET_TAGS = (); }; };
 		0AA3CF4C1BB6A99400668D61 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF4B1BB6A99400668D61 /* CategoryViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0AA3CF4F1BB6B05600668D61 /* CategoryNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF4E1BB6B05600668D61 /* CategoryNameCell.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF521BB6B22000668D61 /* SubCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF511BB6B22000668D61 /* SubCategoryViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF551BB6B45800668D61 /* SubCategoryNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF541BB6B45800668D61 /* SubCategoryNameCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,10 @@
 		0AA3CF4B1BB6A99400668D61 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		0AA3CF4D1BB6B05600668D61 /* CategoryNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryNameCell.h; sourceTree = "<group>"; };
 		0AA3CF4E1BB6B05600668D61 /* CategoryNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryNameCell.m; sourceTree = "<group>"; };
+		0AA3CF501BB6B22000668D61 /* SubCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryViewController.h; sourceTree = "<group>"; };
+		0AA3CF511BB6B22000668D61 /* SubCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryViewController.m; sourceTree = "<group>"; };
+		0AA3CF531BB6B45800668D61 /* SubCategoryNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategoryNameCell.h; sourceTree = "<group>"; };
+		0AA3CF541BB6B45800668D61 /* SubCategoryNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategoryNameCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 				0AA3CF4B1BB6A99400668D61 /* CategoryViewController.m */,
 				0AA3CF4D1BB6B05600668D61 /* CategoryNameCell.h */,
 				0AA3CF4E1BB6B05600668D61 /* CategoryNameCell.m */,
+				0AA3CF501BB6B22000668D61 /* SubCategoryViewController.h */,
+				0AA3CF511BB6B22000668D61 /* SubCategoryViewController.m */,
+				0AA3CF531BB6B45800668D61 /* SubCategoryNameCell.h */,
+				0AA3CF541BB6B45800668D61 /* SubCategoryNameCell.m */,
 			);
 			path = OLXApp;
 			sourceTree = "<group>";
@@ -205,9 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA3CF3A1BB6811800668D61 /* TextCell.m in Sources */,
+				0AA3CF521BB6B22000668D61 /* SubCategoryViewController.m in Sources */,
 				0AA3CF461BB6A24900668D61 /* CategoryCell.m in Sources */,
 				0AA3CF171BB66E3800668D61 /* AppDelegate.m in Sources */,
 				0AA3CF4C1BB6A99400668D61 /* CategoryViewController.m in Sources */,
+				0AA3CF551BB6B45800668D61 /* SubCategoryNameCell.m in Sources */,
 				0AA3CF4F1BB6B05600668D61 /* CategoryNameCell.m in Sources */,
 				0AA3CF371BB677AC00668D61 /* SubmitAnAdViewController.m in Sources */,
 				0AA3CF3D1BB68ADF00668D61 /* PhotoCell.m in Sources */,

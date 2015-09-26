@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class SubmitAnAdViewController;
+@class SubCategoryViewController;
 
 @interface CategoryViewController : UITableViewController {
     SubmitAnAdViewController *delegate;
     NSMutableDictionary *categoriesDict;
     NSArray *categoriesArray;
+    SubCategoryViewController *subCategoryController;
 }
 
 @end

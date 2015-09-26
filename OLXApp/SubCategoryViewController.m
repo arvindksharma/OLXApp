@@ -1,21 +1,18 @@
 //
-//  CategoryViewController.m
+//  SubCategoryViewController.m
 //  OLXApp
 //
 //  Created by Arvind Sharma on 26/09/15.
 //  Copyright © 2015 Arvind Sharma. All rights reserved.
 //
 
-#import "CategoryViewController.h"
-#import "AppDelegate.h"
-#import "CategoryNameCell.h"
 #import "SubCategoryViewController.h"
 
-@interface CategoryViewController ()
+@interface SubCategoryViewController ()
 
 @end
 
-@implementation CategoryViewController
+@implementation SubCategoryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,8 +22,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    categoriesDict = [(AppDelegate *)[[UIApplication sharedApplication] delegate] getCategories];
-    categoriesArray = [categoriesDict allKeys];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,25 +36,16 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return categoriesArray.count;
+    return self.subCategories.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CategoryNameCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryNameCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    cell.categoryNameLabel.text = [categoriesArray objectAtIndex:indexPath.row];
+    // Configure the cell...
     
     return cell;
-}
-
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    subCategoryController = (SubCategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"SubCategoryViewController"];
-    subCategoryController.subCategories = [categoriesArray objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:subCategoryController animated:YES];
 }
 
 
