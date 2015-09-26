@@ -14,9 +14,11 @@
     NSMutableArray *photosArray;
     UIActionSheet *photoOptionActionSheet;
     CategoryViewController *categoryController;
+    
 }
 @property (weak, nonatomic) IBOutlet UITableView *AdEntryTableView;
 - (IBAction)addAPhotoAction:(id)sender;
 - (IBAction)submitAdAction:(id)sender;
+- (void)categorySelected:(NSString *)category;
 
 @end

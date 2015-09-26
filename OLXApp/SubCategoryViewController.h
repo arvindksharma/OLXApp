@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class SubmitAnAdViewController;
 @interface SubCategoryViewController : UITableViewController {
     
 }
 
 @property(nonatomic, strong) NSArray *subCategories;
+@property(nonatomic, weak) SubmitAnAdViewController *delegate;
 
 @end

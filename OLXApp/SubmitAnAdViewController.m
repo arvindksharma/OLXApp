@@ -12,6 +12,7 @@
 #import "SubmitCell.h"
 #import "CategoryCell.h"
 #import "PhotoCollectionViewCell.h"
+#import "CategoryViewController.h"
 
 typedef enum entryField {
     Photos = 0,
@@ -172,7 +173,12 @@ typedef enum entryField {
 - (IBAction)submitAdAction:(id)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     categoryController = (CategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"CategoryViewController"];
+    categoryController.delegate = self;
     [self.navigationController pushViewController:categoryController animated:YES];
+}
+
+- (void)categorySelected:(NSString *)category {
+    
 }
 
 

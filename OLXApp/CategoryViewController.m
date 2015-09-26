@@ -60,6 +60,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     subCategoryController = (SubCategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"SubCategoryViewController"];
     subCategoryController.subCategories = [self.categoriesDict objectForKey:[self.categoriesArray objectAtIndex:indexPath.row]];
+    subCategoryController.delegate = self.delegate;
     [self.navigationController pushViewController:subCategoryController animated:YES];
 }
 

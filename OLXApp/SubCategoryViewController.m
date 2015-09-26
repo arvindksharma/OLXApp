@@ -8,6 +8,7 @@
 
 #import "SubCategoryViewController.h"
 #import "SubCategoryNameCell.h"
+#import "SubmitAnAdViewController.h"
 
 @interface SubCategoryViewController ()
 
@@ -49,6 +50,11 @@
     return cell;
 }
 
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.delegate categorySelected:[self.subCategories objectAtIndex:indexPath.row]];
+}
 
 /*
 // Override to support conditional editing of the table view.

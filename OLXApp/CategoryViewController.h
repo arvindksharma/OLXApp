@@ -12,12 +12,10 @@
 @class SubCategoryViewController;
 
 @interface CategoryViewController : UITableViewController {
-    SubmitAnAdViewController *delegate;
-    
     
     SubCategoryViewController *subCategoryController;
 }
-
+@property(nonatomic, weak) SubmitAnAdViewController *delegate;
 @property(nonatomic, strong) NSMutableDictionary *categoriesDict;
 @property(nonatomic, strong) NSMutableArray *categoriesArray;
 
