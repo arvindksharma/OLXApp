@@ -57,10 +57,10 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //[tableView deselectRowAtIndexPath:indexPath animated:NO];
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    subCategoryController = (SubCategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"SubCategoryViewController"];
-//    subCategoryController.subCategories = [self.categoriesArray objectAtIndex:indexPath.row];
-//    [self.navigationController pushViewController:subCategoryController animated:YES];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    subCategoryController = (SubCategoryViewController *)[storyboard instantiateViewControllerWithIdentifier:@"SubCategoryViewController"];
+    subCategoryController.subCategories = [self.categoriesDict objectForKey:[self.categoriesArray objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:subCategoryController animated:YES];
 }
 
 
