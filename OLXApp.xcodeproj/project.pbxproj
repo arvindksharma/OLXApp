@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		0AA3CF141BB66E3800668D61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF131BB66E3800668D61 /* main.m */; };
 		0AA3CF171BB66E3800668D61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF161BB66E3800668D61 /* AppDelegate.m */; };
-		0AA3CF1A1BB66E3800668D61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF191BB66E3800668D61 /* ViewController.m */; };
 		0AA3CF1D1BB66E3800668D61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA3CF1B1BB66E3800668D61 /* Main.storyboard */; };
 		0AA3CF201BB66E3800668D61 /* OLXApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF1E1BB66E3800668D61 /* OLXApp.xcdatamodeld */; };
 		0AA3CF221BB66E3800668D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA3CF211BB66E3800668D61 /* Assets.xcassets */; };
 		0AA3CF251BB66E3800668D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA3CF231BB66E3800668D61 /* LaunchScreen.storyboard */; };
+		0AA3CF2E1BB6737E00668D61 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AA3CF2D1BB6737E00668D61 /* Categories.plist */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF341BB6771100668D61 /* MyAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF331BB6771100668D61 /* MyAdsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF371BB677AC00668D61 /* SubmitAnAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF361BB677AC00668D61 /* SubmitAnAdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF3A1BB6811800668D61 /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF391BB6811800668D61 /* TextCell.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF3D1BB68ADF00668D61 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF3C1BB68ADF00668D61 /* PhotoCell.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF401BB6914900668D61 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF3F1BB6914900668D61 /* PhotoCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		0AA3CF431BB69E7A00668D61 /* SubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3CF421BB69E7A00668D61 /* SubmitCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +27,24 @@
 		0AA3CF131BB66E3800668D61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AA3CF151BB66E3800668D61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AA3CF161BB66E3800668D61 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AA3CF181BB66E3800668D61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0AA3CF191BB66E3800668D61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AA3CF1C1BB66E3800668D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AA3CF1F1BB66E3800668D61 /* OLXApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OLXApp.xcdatamodel; sourceTree = "<group>"; };
 		0AA3CF211BB66E3800668D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA3CF241BB66E3800668D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA3CF261BB66E3800668D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA3CF2D1BB6737E00668D61 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
+		0AA3CF321BB6771100668D61 /* MyAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAdsViewController.h; sourceTree = "<group>"; };
+		0AA3CF331BB6771100668D61 /* MyAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAdsViewController.m; sourceTree = "<group>"; };
+		0AA3CF351BB677AC00668D61 /* SubmitAnAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitAnAdViewController.h; sourceTree = "<group>"; };
+		0AA3CF361BB677AC00668D61 /* SubmitAnAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitAnAdViewController.m; sourceTree = "<group>"; };
+		0AA3CF381BB6811800668D61 /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		0AA3CF391BB6811800668D61 /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
+		0AA3CF3B1BB68ADF00668D61 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		0AA3CF3C1BB68ADF00668D61 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		0AA3CF3E1BB6914900668D61 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		0AA3CF3F1BB6914900668D61 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		0AA3CF411BB69E7A00668D61 /* SubmitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCell.h; sourceTree = "<group>"; };
+		0AA3CF421BB69E7A00668D61 /* SubmitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +79,24 @@
 			children = (
 				0AA3CF151BB66E3800668D61 /* AppDelegate.h */,
 				0AA3CF161BB66E3800668D61 /* AppDelegate.m */,
-				0AA3CF181BB66E3800668D61 /* ViewController.h */,
-				0AA3CF191BB66E3800668D61 /* ViewController.m */,
 				0AA3CF1B1BB66E3800668D61 /* Main.storyboard */,
 				0AA3CF211BB66E3800668D61 /* Assets.xcassets */,
 				0AA3CF231BB66E3800668D61 /* LaunchScreen.storyboard */,
 				0AA3CF261BB66E3800668D61 /* Info.plist */,
 				0AA3CF1E1BB66E3800668D61 /* OLXApp.xcdatamodeld */,
 				0AA3CF121BB66E3800668D61 /* Supporting Files */,
+				0AA3CF321BB6771100668D61 /* MyAdsViewController.h */,
+				0AA3CF331BB6771100668D61 /* MyAdsViewController.m */,
+				0AA3CF351BB677AC00668D61 /* SubmitAnAdViewController.h */,
+				0AA3CF361BB677AC00668D61 /* SubmitAnAdViewController.m */,
+				0AA3CF381BB6811800668D61 /* TextCell.h */,
+				0AA3CF391BB6811800668D61 /* TextCell.m */,
+				0AA3CF3B1BB68ADF00668D61 /* PhotoCell.h */,
+				0AA3CF3C1BB68ADF00668D61 /* PhotoCell.m */,
+				0AA3CF3E1BB6914900668D61 /* PhotoCollectionViewCell.h */,
+				0AA3CF3F1BB6914900668D61 /* PhotoCollectionViewCell.m */,
+				0AA3CF411BB69E7A00668D61 /* SubmitCell.h */,
+				0AA3CF421BB69E7A00668D61 /* SubmitCell.m */,
 			);
 			path = OLXApp;
 			sourceTree = "<group>";
@@ -77,9 +104,18 @@
 		0AA3CF121BB66E3800668D61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AA3CF2C1BB672D900668D61 /* Resources */,
 				0AA3CF131BB66E3800668D61 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AA3CF2C1BB672D900668D61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3CF2D1BB6737E00668D61 /* Categories.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA3CF2E1BB6737E00668D61 /* Categories.plist in Resources */,
 				0AA3CF251BB66E3800668D61 /* LaunchScreen.storyboard in Resources */,
 				0AA3CF221BB66E3800668D61 /* Assets.xcassets in Resources */,
 				0AA3CF1D1BB66E3800668D61 /* Main.storyboard in Resources */,
@@ -152,9 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA3CF1A1BB66E3800668D61 /* ViewController.m in Sources */,
+				0AA3CF3A1BB6811800668D61 /* TextCell.m in Sources */,
 				0AA3CF171BB66E3800668D61 /* AppDelegate.m in Sources */,
+				0AA3CF371BB677AC00668D61 /* SubmitAnAdViewController.m in Sources */,
+				0AA3CF3D1BB68ADF00668D61 /* PhotoCell.m in Sources */,
 				0AA3CF141BB66E3800668D61 /* main.m in Sources */,
+				0AA3CF401BB6914900668D61 /* PhotoCollectionViewCell.m in Sources */,
+				0AA3CF431BB69E7A00668D61 /* SubmitCell.m in Sources */,
+				0AA3CF341BB6771100668D61 /* MyAdsViewController.m in Sources */,
 				0AA3CF201BB66E3800668D61 /* OLXApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OLXApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vishuddhatech.OLXApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OLXApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vishuddhatech.OLXApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

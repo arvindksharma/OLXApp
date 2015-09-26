@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mobile</key>
+	<array>
+		<string>Windows</string>
+		<string>Nokia</string>
+		<string>iPhone</string>
+		<string>Android</string>
+		<string>Blackberry</string>
+	</array>
+	<key>Cars</key>
+	<array>
+		<string>Fiat</string>
+		<string>Honda</string>
+		<string>Maruti</string>
+		<string>Hyundai</string>
+		<string>Volkswagon</string>
+		<string>Skoda</string>
+	</array>
+	<key>Electronics</key>
+	<array>
+		<string>Washing Machine</string>
+		<string>Refridgerator</string>
+	</array>
+	<key>Other</key>
+	<array/>
+</dict>
+</plist>

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyAdsViewController.h
 //  OLXApp
 //
 //  Created by Arvind Sharma on 26/09/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MyAdsViewController : UIViewController
 
 @end
-
