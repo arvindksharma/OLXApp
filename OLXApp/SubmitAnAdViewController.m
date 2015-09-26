@@ -19,6 +19,7 @@ typedef enum entryField {
     Name,
     ContactNumber,
     Email,
+    ChooseCategory,
     Submit
 }EntryField;
 
@@ -55,6 +56,10 @@ typedef enum entryField {
     }
     else if(indexPath.row == Submit) {
         SubmitCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SubmitCell" forIndexPath:indexPath];
+        return cell;
+    }
+    else if(indexPath.row == ChooseCategory) {
+        SubmitCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell" forIndexPath:indexPath];
         return cell;
     }
     else {
